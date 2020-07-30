@@ -1,0 +1,32 @@
+.filter {
+    display: flex;
+    flex-direction: column;
+    padding: $m-size;
+}
+
+.filter__input {
+    flex-grow: 1;
+    background: $dark-blue;
+    border: none;
+    border-bottom: .3rem solid darken($dark-blue, 10%);
+    color: $off-white;
+    margin: 0 0 $s-size 0;
+    padding: $s-size;
+}
+
+.filter-error {
+    color: red;
+    font-style: italic;
+    padding: 0 $m-size;
+    margin: $m-size 0 0 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+    .filter {
+        flex-direction: row;
+    }
+
+    .filter__input {
+        margin: 0 $s-size 0 0;
+    }
+}
